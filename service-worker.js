@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/emailsender-antd/precache-manifest.61a503d0ceddd3f0b8e8cc6b4b4f2e23.js"
+  "/emailsender-antd/precache-manifest.2dc233884784e8e53c82a7ac49847633.js"
 );
 
 workbox.clientsClaim();
