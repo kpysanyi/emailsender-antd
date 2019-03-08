@@ -4,20 +4,14 @@ import { Layout, List, Icon, Input, Button, message, notification } from 'antd';
 import styles from './App.module.scss';
 
 const { Header, Content, Footer } = Layout;
-const API_URL = 'http://localhost:8000/api/sendEmail';
+const API_URL = 'https://email-sender-api.herokuapp.com/api/sendEmail';
 
 class App extends Component {
   constructor(props) {
     super(props);
 
-    let testdata = [
-      { username: 'raymond', email: 'raymond.techworld@gmail.com' },
-      { username: 'test1', email: 'testsdf@gmail.com' },
-      { username: 'zootopia', email: 'pro.zootopia106@gmail.com' }
-    ];
-
     this.state = {
-      receipts: testdata,
+      receipts: [],
       username: '',
       email: '',
       message: '',
