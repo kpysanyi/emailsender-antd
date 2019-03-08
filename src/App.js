@@ -124,11 +124,13 @@ class App extends Component {
   renderReceipt = (item, index) => (
     <List.Item actions={[<a key={index} onClick={this.handleRemoveReceipt(index)}>Remove</a>]}>
       <List.Item.Meta title={item.username} description={item.email} />
-      {item.status && (
+      {item.status ? (
         <div className={styles.receiptStatus}>
           {item.status}
         </div>
-      )}
+      ) :
+        <div />
+      }
     </List.Item>
   )
 
