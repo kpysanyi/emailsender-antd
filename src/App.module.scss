@@ -1,0 +1,49 @@
+.App {
+  height: 100vh;
+}
+
+.header {
+  padding: 0px 20px;
+  background-color: #22A7F0;
+  
+  h1 {
+    color: #ffffff;
+  }
+}
+
+.content {
+  background-color: #ffffff;
+  padding: 20px 20px;
+
+  .inputGroup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .username, .email{
+      flex: 1;
+      margin-right: 10px;
+    }
+  }
+  
+  .receiptList {
+    margin-top: 20px;
+  }
+
+  .text {
+    margin-top: 20px;
+  }
+
+  .btnGroup {
+    margin-top: 20px;
+    text-align: center;
+
+    .sendBtn, .clearBtn {
+      margin: 0px 5px;
+    }
+  }
+}
+
+.footer {
+  text-align: center;
+}
